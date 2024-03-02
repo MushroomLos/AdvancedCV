@@ -1,5 +1,8 @@
 ---
 # 高斯滤波处理项目
+## Github地址
+Github地址：[AdvancedCD](https://github.com/MushroomLos/AdvancedCV/tree/master)
+
 ## 运行环境
 - Python版本：3.6.15
 - 需要的库及版本：
