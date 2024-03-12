@@ -60,22 +60,22 @@ compare_images(results, titles)
 ## 输入输出
 
 - 图像1直方图均匀化与CLAHE
-![image](.\images\1-result-1.png)
+![image](images\1-result-1.png)
 
 - 图像2直方图均匀化与CLAHE
-![image](.\images\2-result-1.png)
+![image](images\2-result-1.png)
 
 - 图像3直方图均匀化与CLAHE
-![image](.\images\3-result-1.png)
+![image](images\3-result-1.png)
 
 - 图像1使用gamma矫正
-![image](.\images\1-result-2.png)
+![image](images\1-result-2.png)
 
 - 图像2使用gamma矫正
-![image](.\images\2-result-2.png)
+![image](images\2-result-2.png)
 
 - 图像3使用gamma矫正
-![image](.\images\3-result-2.png)
+![image](images\3-result-2.png)
 
 
 ## 结论

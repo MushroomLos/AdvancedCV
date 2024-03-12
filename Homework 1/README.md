@@ -39,19 +39,19 @@ filtered_image = GaussFilter(image, kernel)
 ## 输入输出
 
 - 输入图像：
-![image](.\image\input_color.png)
+![image](image\input_color.png)
 
 - 经过5x5，标准差为1的高斯核处理的灰度图像
-![image](.\image\output_gray_1.png)
+![image](image\output_gray_1.png)
 
 - 不同大小和标准差的高斯核处理的灰度图像对比
-![image](.\image\output_gray_2.png)
+![image](image\output_gray_2.png)
 
 - 使用opencv处理的5x5，标准差为1的高斯处理的灰度图像
-![image](.\image\output_gray_3.png)
+![image](image\output_gray_3.png)
 
 - 经过高斯滤波的彩色图像
-![image](.\image\output_color.png)
+![image](image\output_color.png)
 
 
 ## 结论
