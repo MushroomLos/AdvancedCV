@@ -1,12 +1,12 @@
 ---
-# 高斯滤波处理项目
+# 图像滤波
 ## Github地址
 Github地址：[AdvancedCD](https://github.com/MushroomLos/AdvancedCV/tree/master)
 
 ## 运行环境
 - Python版本：3.6.15
 - 需要的库及版本：
-  - numyy 1.19.5：用于数组操作。
+  - numpy 1.19.5：用于数组操作。
   - matplotlib 3.3.4：用于图像显示。
   - cv2 3.3.1：用于图像展示和处理。
 
@@ -22,6 +22,8 @@ kernel = GaussKernel(size, sigma)
 - `size`：高斯核的大小，应为奇数。
 - `sigma`：高斯核的标准差。
 
+对于`GaussKernel`函数，我们会初始化一个初值全为0的矩阵，然后计算对应的中心点，接下来，我们会循环我们设置的高斯核大小，根据迭代器i和j的值计算对应位置上的值，并在计算完成后进行归一化。最后返回即可得到对应大小和方差的高斯核。
+
 ### 高斯滤波
 
 ```python
@@ -31,22 +33,25 @@ filtered_image = GaussFilter(image, kernel)
 - `image`：输入的灰度或彩色图像。
 - `kernel`：通过 `GaussKernel` 生成的高斯核。
 
+对于`GaussFilter`函数，我们会判断输入的图像是灰度图像还是彩色图像，然后初始化输出图像，并分别对RGB三个通道应用高斯滤波，为了保证图像的大小，我们会进行边缘填充，然后将我们的高斯核应用到图像上，最后返回我们的结果图像。
+
+
 ## 输入输出
 
 - 输入图像：
-![image](.\\image\input_color.png)
+![image](.\image\input_color.png)
 
 - 经过5x5，标准差为1的高斯核处理的灰度图像
-![image](.\\image\output_gray_1.png)
+![image](.\image\output_gray_1.png)
 
 - 不同大小和标准差的高斯核处理的灰度图像对比
-![image](.\\image\output_gray_2.png)
+![image](.\image\output_gray_2.png)
 
 - 使用opencv处理的5x5，标准差为1的高斯处理的灰度图像
-![image](.\\image\output_gray_3.png)
+![image](.\image\output_gray_3.png)
 
 - 经过高斯滤波的彩色图像
-![image](.\\image\output_color.png)
+![image](.\image\output_color.png)
 
 
 ## 结论
